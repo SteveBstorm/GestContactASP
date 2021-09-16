@@ -1,0 +1,10 @@
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Contact\bin\Debug\Contact.dacpac
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Contact\bin\Debug\Contact.dll
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Contact\bin\Debug\Contact.pdb
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Contact\obj\Debug\Contact.sqlproj.AssemblyReference.cache
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Contact\obj\Debug\Model.xml
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Contact\obj\Debug\refactor.xml
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Contact\obj\Debug\postdeploy.sql
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Contact\obj\Debug\predeploy.sql
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Contact\obj\Debug\Contact.dll
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Contact\obj\Debug\Contact.pdb

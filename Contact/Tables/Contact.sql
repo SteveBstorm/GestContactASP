@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Contact]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	LastName VARCHAR(50) NOT NULL,
+	FirstName VARCHAR(50) NOT NULL,
+	Telephone VARCHAR(20) NOT NULL,
+	UserId INT 
+
+	CONSTRAINT FK_Contact_User FOREIGN KEY (UserId) REFERENCES Users(Id)
+)
