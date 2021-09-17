@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data.SqlClient;
 using Dal.Entities;
+using Dal.Interface;
 
 namespace Dal.Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
-        private string _connectionString = @"Data Source=DESKTOP-RGPQP6I\TFTIC2014;Initial Catalog=NetAzureContact;Integrated Security=True;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-    
+        private string _connectionString = @"Data Source=DESKTOP-RGPQP6I\TFTIC2014;Initial Catalog=NetAngularContact;Integrated Security=True;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
         public void Insert(string Email, string Password, string ScreenName)
         {
             using (SqlConnection connection = new SqlConnection(_connectionString))
@@ -17,7 +18,7 @@ namespace Dal.Services
                 connection.Open();
                 using (SqlCommand cmd = connection.CreateCommand())
                 {
-                    cmd.CommandText = "AddUser";
+                    cmd.CommandText = "[dbo].[AddUser]";
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                     cmd.Parameters.AddWithValue("Email", Email);
@@ -32,19 +33,19 @@ namespace Dal.Services
 
         public User Login(string Email, string Password)
         {
-            User connecterUser= new User();
+            User connecterUser = new User();
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
                 using (SqlCommand cmd = connection.CreateCommand())
                 {
-                    cmd.CommandText = "LoginUser";
+                    cmd.CommandText = "dbo.LoginUser";
                     cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
                     cmd.Parameters.AddWithValue("Email", Email);
                     cmd.Parameters.AddWithValue("Password", Password);
 
-                    using(SqlDataReader reader = cmd.ExecuteReader())
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())
                         {

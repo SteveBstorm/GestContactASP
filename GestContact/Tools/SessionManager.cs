@@ -13,5 +13,10 @@ namespace GestContact.Tools
             get { return (User)HttpContext.Current.Session["user"]; }
             set { HttpContext.Current.Session["user"] = value; }
         }
+
+        public static void Disconnect()
+        {
+            HttpContext.Current.Session.Clear();
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using DAL = Dal.Entities;
 using WEB = GestContact.Models;
+using GestContact.Tools;
 
 namespace GestContact.Tools
 {
@@ -26,6 +27,17 @@ namespace GestContact.Tools
                 Id = u.Id,
                 Email = u.Email,
                 ScreenName = u.ScreenName
+            };
+        }
+
+        public static DAL.Contact ToDAL(this WEB.RegisterContact c)
+        {
+            return new DAL.Contact
+            {
+                LastName = c.LastName,
+                FirstName = c.FirstName,
+                Telephone = c.Telephone,
+                UserId = SessionManager.user.Id
             };
         }
     }

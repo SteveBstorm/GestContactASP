@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using GestContact.Tools
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -21,9 +22,18 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Accueil", "Index", "Home")</li>
-                    <li>@Html.ActionLink("À propos de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    @if (SessionManager.user != null)
+                    {
+                        <li>@Html.ActionLink("Vos Contacts", "List", "Contact")</li>
+                        <li>@Html.ActionLink("Ajouter un contact", "Ajout", "Contact")</li>
+                        <li>@Html.ActionLink("Se déconnecter", "Logout", "User")</li>
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Se connecter", "Login", "User")</li>
+                        <li>@Html.ActionLink("S'enregistrer", "Register", "User")</li>
+                    }
+
                 </ul>
             </div>
         </div>

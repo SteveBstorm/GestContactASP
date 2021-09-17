@@ -1,0 +1,9 @@
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Dal\bin\Debug\netstandard2.0\Dal.deps.json
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Dal\bin\Debug\netstandard2.0\Dal.dll
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Dal\bin\Debug\netstandard2.0\Dal.pdb
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Dal\obj\Debug\netstandard2.0\Dal.csproj.AssemblyReference.cache
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Dal\obj\Debug\netstandard2.0\Dal.AssemblyInfoInputs.cache
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Dal\obj\Debug\netstandard2.0\Dal.AssemblyInfo.cs
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Dal\obj\Debug\netstandard2.0\Dal.csproj.CoreCompileInputs.cache
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Dal\obj\Debug\netstandard2.0\Dal.dll
+C:\Users\Steve\source\Exemple\NetAngular\GestContact\Dal\obj\Debug\netstandard2.0\Dal.pdb
